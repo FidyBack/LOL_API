@@ -1,0 +1,38 @@
+.header {
+    background: #6840A3;
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: row;
+    box-shadow: .5rem .5rem 1rem rgba(0, 0, 0, 0.6);
+}
+
+.header img{
+    width: 10rem;
+    border-radius: 10rem;
+}
+
+.informations {
+    color: #fff;
+    margin-left: 2rem;
+    background: #6840A3;
+    display: flex;
+    flex-direction: column;
+}
+
+.informations h2, h3{
+    background: #6840A3;
+}
+
+.informations h2{
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin-bottom: .5rem;
+    font-family: Beaufort, Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.informations h3{
+    font-size: 1.1rem;
+    margin-bottom: .5rem;
+}

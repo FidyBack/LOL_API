@@ -1,18 +1,24 @@
 import React, {Component} from 'react';
-import api from '../../services/api';
+import {Link} from 'react-router-dom';
+import './styles.css';
 
 export default class Main extends Component {
-    componentDidMount() {
-        this.loadProducts();
-    }
 
-    loadProducts = async () => {
-        const response = await api.get('/products');
-
-        console.log(response);
-    }
+    state = {
+        nameValue: ''
+    };
+    
+    handleChange = event => {
+        this.setState({ nameValue: event.target.value });
+    };
 
     render() {
-        return <h1>Hi</h1>
+        return (
+            <div className="cadastro">
+                <p>Insira seu nome de Invocador:</p>
+                <input type="text" className="nickname" value={this.state.nameValue} onChange={this.handleChange}></input>
+                <Link to={`/user/${this.state.nameValue}`}>Cadastrar</Link>
+            </div>
+        )
     }
 }

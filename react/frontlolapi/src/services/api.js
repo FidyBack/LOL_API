@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const api = axios.create({
-     baseURL: 'http://localhost:3001/api'
+     baseURL: 'https://br1.api.riotgames.com/lol'
     });
 
 export default api;

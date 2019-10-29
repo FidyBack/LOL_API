@@ -1,12 +1,13 @@
 import React from 'react';
+import Routes from "./routes";
 import './styles.css';
 import Header from './components/Header';
-import Main from './pages/main';
 
 const App = () => (
     <div className="App">
+      <link href="https://fonts.googleapis.com/css?family=Average&display=swap" rel="stylesheet"></link>
       <Header />
-      <Main />
+      <Routes />
     </div>
 );
 

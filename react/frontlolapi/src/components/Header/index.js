@@ -2,7 +2,7 @@ import React from "react";
 import "./styles.css";
 
 const Header = () => (
-    <header id="main-header">Hello</header>
+    <header id="main-header">STATS LEGENDS</header>
 );
 
 export default Header;
